@@ -23,13 +23,18 @@ class CalculatorBrain {
     }
   }
 
-  String getDetails() {
-    if (_bmi >= 25) {
-      return 'You have a higher weight than usual. Try to lose it.';
-    } else if (_bmi > 18.5) {
-      return 'You have a normal body weight. Keep Up!';
-    } else {
-      return 'You have a lower weight than usual. Eat more.';
-    }
+String getDetails() 
+{
+    if (_bmi >= 25) 
+{
+      return 'Your BMI is higher than average, this could lead to medical problems. \n Please try to lose your weight';
+ } else if (_bmi > 18.5) 
+{
+      return 'You have a normal body BMI.  Keep Up and stay safe!';
+  } 
+else
+ {
+      return 'You have a lower BMI than normal. Please try to maintain your health by eating healthy food.';
   }
+ }
 }
