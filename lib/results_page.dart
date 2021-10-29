@@ -41,6 +41,14 @@ class Results extends StatelessWidget {
                 children: [
                   //here
                   Text(
+                    bmiStatus.toUpperCase(),
+                    style: TextStyle(fontSize: 22.0, color: Colors.green),
+                  ),
+                  Text(
+                    bmi,
+                    style: TextStyle(fontSize: 70.0, fontWeight: FontWeight.w900),
+                  ),
+                  Text(
                     bmiInfo,
                     textAlign: TextAlign.center,
                     style: TextStyle(
